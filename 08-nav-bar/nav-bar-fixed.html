@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>Nav Bar: Fixed</title>
+    <style>
+
+      header {
+        margin-top: 3.5em;
+        /*
+          why ems (a relative unit)? If the user increases/decreases
+          the font size, the margin will adjust as well!
+        */
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #eee;
+        width: 100%;
+      }
+
+      nav ul {
+        margin-left: 0.6em;
+        /* brings nav text into alignment with the text below */
+        padding-left: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+    </style>
+	</head>
+
+	<body>
+
+    <header>
+      <h1>Navigation Bar</h1>
+      <p>A simple navigation bar:</p>
+    </header>
+
+	  <nav>
+		  <ul>
+			  <li><a href="#">Home</a></li>
+				<li><a href="#">Baseball</a></li>
+				<li><a href="#">Basketball</a></li>
+				<li><a href="#">Football</a></li>
+				<li><a href="#">Hockey</a></li>
+				<li><a href="#">Soccer</a></li>
+			</ul>
+		</nav>
+
+		<main>
+  		<p>We do not want the following to change!</p>
+
+  		<ul>
+	  	  <li>One</li>
+		  	<li>Two</li>
+			  <li>Three</li>
+			</ul>
+		</main>
+  </body>
+</html>

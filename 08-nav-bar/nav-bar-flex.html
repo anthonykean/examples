@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+		<title>Nav Bar: Flexed</title>
+    <style>
+
+      nav {
+        background-color: #eee;
+        width: 100%;
+        padding: 0.25em 0;
+      }
+
+      nav ul {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row; /* also: row-reverse */
+        justify-content: flex-start;
+        /* also: flex-end, center, space-between, space-around */
+      }
+
+      nav li {
+        display: inline-block;
+      }
+
+    </style>
+	</head>
+
+	<body>
+
+    <header>
+      <h1>Navigation Bar</h1>
+      <p>A simple navigation bar:</p>
+    </header>
+
+	  <nav>
+		  <ul>
+			  <li><a href="#">Home</a></li>
+				<li><a href="#">Baseball</a></li>
+				<li><a href="#">Basketball</a></li>
+				<li><a href="#">Football</a></li>
+				<li><a href="#">Hockey</a></li>
+				<li><a href="#">Soccer</a></li>
+			</ul>
+		</nav>
+
+		<main>
+  		<p>We do not want the following to change!</p>
+
+  		<ul>
+	  	  <li>One</li>
+		  	<li>Two</li>
+			  <li>Three</li>
+			</ul>
+		</main>
+  </body>
+</html>

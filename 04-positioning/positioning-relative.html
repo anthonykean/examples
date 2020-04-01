@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Positioning</title>
+
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+      }
+
+      main {
+        margin: 50px;
+        border: 3px solid #999;
+      }
+
+      #red {
+        background-color: red;
+      }
+
+      #green {
+        background-color: green;
+        position: relative;
+        top: -50px;
+        left: 50px;
+      }
+
+      /*
+        We're moving #green based on where it begins in the natural
+        flow of elements. In this case, we're moving it -50 pixels
+        from the top and 50 pixels from the left.
+
+        Notice it overlaps the red box. We can change this ordering
+        with z-index. (See positioning-z-index.html for an example.)
+      */
+
+      #blue {
+        background-color: blue;
+      }
+    </style>
+
+  </head>
+  <body>
+      <main>
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+      </main>
+  </body>
+</html>
